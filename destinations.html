@@ -1,0 +1,139 @@
+<!-- destinations.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations in Greece</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <style>
+    body {
+      background-color: #add8e6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0;
+      font-family: Georgia, serif;
+    }
+
+    h1 {
+      color: #003366;
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    main {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .destination-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1000px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .destination {
+      width: 300px;
+      background: transparent;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .destination h2 {
+      color: #003366;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-family: Georgia, serif;
+    }
+
+    .destination p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      font-family: Georgia, serif;
+    }
+
+    .small-img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+      text-align: center;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #003366;
+      font-size: 1.2rem;
+      font-family: Georgia, serif;
+    }
+
+    nav ul li a:hover {
+      color: #ff6600;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-family: Georgia, serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Discover Greece</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="culture.html">Culture & Cuisine</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="destination-section">
+      <div class="destination">
+        <h2>Santorini</h2>
+        <p>Santorini is a breathtaking Greek island famous for its whitewashed buildings, blue-domed churches, stunning sunsets, and unique volcanic beaches.</p>
+        <img src="images/santorini.jpg" alt="Santorini" class="small-img">
+      </div>
+      <div class="destination">
+        <h2>Athens</h2>
+        <p>Athens, historic city and capital of Greece. Many of Classical civilization's intellectual and artistic ideas originated there, and the city is generally considered to be the birthplace of Western civilization.</p>
+        <img src="images/athens.jpg" alt="Athens" class="small-img">
+      </div>
+      <div class="destination">
+        <h2>Crete</h2>
+        <p>The largest island in Greece, Crete is a diverse and vibrant land packed with ancient ruins, buzzing cities and breathtaking beaches.</p>
+        <img src="images/crete.jpg" alt="Crete" class="small-img">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Discover Greece</p>
+  </footer>
+</body>
+</html>
+

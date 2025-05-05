@@ -1,0 +1,167 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Discover Greece</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  <style>
+    body {
+      background-color: #add8e6;
+      font-family: Georgia, serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+  text-align: center;
+  color: #003366;
+  font-family: Georgia, serif;
+  margin-top: 20px;
+ }
+
+
+    form {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      width: 100%;
+      margin: 30px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: Georgia, serif;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group.inline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #003366;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0055a5;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #003366;
+      font-size: 1.2rem;
+      font-family: Georgia, serif;
+    }
+
+    nav ul li a:hover {
+      color: #ff6600;
+    }
+
+    footer {
+      margin: 30px 0;
+      text-align: center;
+      font-family: Georgia, serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="culture.html">Culture & Cuisine</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone"/>
+    </div>
+
+   <div class="form-group">
+  <label for="referral">How did you hear about us?</label>
+  <div style="margin-top: 5px;">
+    <label style="display: block;">
+      <input type="radio" name="referral" value="Friend"> Friend
+    </label>
+    <label style="display: block;">
+      <input type="radio" name="referral" value="Social Media"> Social Media
+    </label>
+    <label style="display: block;">
+      <input type="radio" name="referral" value="Other"> Other
+    </label>
+  </div>
+</div>
+
+
+
+    <div class="form-group">
+      <label for="interests">What destinations are you interested in?</label>
+      <input type="checkbox" name="interests" value="Santorini" id="santorini"/><label for="santorini">Santorini</label><br>
+      <input type="checkbox" name="interests" value="Athens" id="athens"/><label for="athens">Athens</label><br>
+      <input type="checkbox" name="interests" value="Crete" id="crete"/><label for="crete">Crete</label>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+    </div>
+
+    <input type="submit" value="Send Message"/>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Discover Greece</p>
+  </footer>
+</body>
+</html>
